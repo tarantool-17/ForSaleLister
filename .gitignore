@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Local listing runs may contain private photos and seller data.
+runs/
+
+# Common generated files.
+node_modules/
+__pycache__/
+*.pyc
