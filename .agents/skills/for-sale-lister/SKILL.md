@@ -1,11 +1,17 @@
 ---
 name: for-sale-lister
-description: Turn product photos into researched, reviewable marketplace listings and, after explicit approval, publish them through available marketplace connectors or a signed-in browser. Use when a user wants to identify an item from images, research its market, write platform-specific sale copy, or list it for sale; do not use for general image analysis or buying products.
+description: Turn product photos into researched, reviewable Russian-language marketplace listings using Belarus-only price evidence and, after explicit approval, publish them through available marketplace connectors or a signed-in browser. Use when a user wants to identify an item from images, research its Belarusian market price, write platform-specific sale copy, or list it for sale; do not use for general image analysis or buying products.
 ---
 
 # For Sale Lister
 
 Turn one product photo set into truthful, evidence-backed listing drafts. Publish only the exact packet the user approves.
+
+## Language and pricing market
+
+- Communicate with the user exclusively in Russian. Write every question, explanation, draft, warning, approval request, and completion report in Russian, regardless of the language used by the user. Preserve only proper names, model identifiers, URLs, and exact untranslated platform values when changing them would make the information inaccurate or unusable.
+- Research prices only in the Belarusian market. A price source qualifies only when the seller, completed sale, retailer, or marketplace offer is located in Belarus. Do not use prices from Russia, the EU, global marketplaces, or other countries as comparables, even when the same model is unavailable locally.
+- Prefer price recommendations and listing prices in BYN. If Belarusian evidence is insufficient, state in Russian that a reliable Belarusian market price cannot be established; do not substitute foreign-market evidence or invent a conversion-based estimate.
 
 ## Choose the mode
 
@@ -17,7 +23,7 @@ Turn one product photo set into truthful, evidence-backed listing drafts. Publis
 
 1. Require at least one usable product photo. Inspect every supplied image, including labels, model numbers, serial-number areas, accessories, packaging, wear, and damage. If none is usable, pause and request clear overall, identifier or label, included-contents, and defect photos before identifying, researching, or drafting.
 2. Separate facts directly visible in the photos from hypotheses. Give the proposed identity a confidence level and explain the evidence. Do not claim an exact model, material, authenticity, working state, or included accessory from visual similarity alone.
-3. Search the current web using the strongest visible identifiers. Prefer manufacturer documentation for specifications and distinguish sold-price evidence from active asking prices. Record the URL, access date, and claim supported by every consequential source. If live research is unavailable, say so and do not invent a market price.
+3. Search the current web using the strongest visible identifiers. Manufacturer documentation from any country may support specifications, but pricing evidence must satisfy the Belarus-only rule above. Distinguish Belarusian sold-price evidence from active Belarusian asking prices. Record the URL, access date, Belarus location evidence, and claim supported by every consequential source. If live research is unavailable, say so in Russian and do not invent a market price.
 4. Ask one compact batch of questions for seller-only or unresolved facts that materially affect the listing. Cover, when relevant:
    - exact identity or variant;
    - ownership, authenticity, or provenance claims;
@@ -28,7 +34,7 @@ Turn one product photo set into truthful, evidence-backed listing drafts. Publis
    - general location and pickup/shipping preferences, parcel size, and weight.
 5. Build the canonical packet described in [references/listing-packet.md](references/listing-packet.md). Preserve unknown values as unknown; never turn them into positive claims.
 6. For each target marketplace, verify its current categories, required fields, title or description limits, condition choices, restricted-item rules, and fulfillment options using first-party help or the live form. Adapt the canonical facts without changing them between platforms.
-7. Recommend a price range only when supported by relevant comparables. Explain the evidence and let the seller choose the final price. Keep a private minimum price out of public copy.
+7. Recommend a price range only when supported by relevant Belarusian comparables. Explain the evidence in Russian, use BYN by default, and let the seller choose the final price. Keep a private minimum price out of public copy.
 
 ## Approval gate
 
@@ -55,4 +61,4 @@ Read [references/publishing.md](references/publishing.md) before making external
 
 ## Report completion
 
-Return one row per platform with `published`, `drafted`, `blocked`, `failed`, or `outcome_unknown`, plus its listing ID or URL when available. Distinguish actions actually completed from drafts merely prepared in the conversation, and list any remaining user action. `outcome_unknown` means a final action may have succeeded but could not be reconciled, so retry remains prohibited.
+Return one row per platform using the Russian status labels `опубликовано`, `черновик сохранён`, `заблокировано`, `ошибка`, or `результат неизвестен`, plus its listing ID or URL when available. Distinguish actions actually completed from drafts merely prepared in the conversation, and list any remaining user action in Russian. `Результат неизвестен` means a final action may have succeeded but could not be reconciled, so retry remains prohibited.
