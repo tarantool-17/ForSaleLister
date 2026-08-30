@@ -1,11 +1,12 @@
 # ForSaleLister
 
-ForSaleLister is a Codex-first assistant that turns product photos into researched, reviewable for-sale listings and can publish an approved version through available marketplace tools.
+ForSaleLister is a Codex-first assistant that turns product photos into researched, reviewable Russian-language for-sale listings and can publish an approved version through available marketplace tools.
 
 The initial version runs as the repo-scoped `$for-sale-lister` skill inside Codex. It:
 
 - inspects product photos and separates visible evidence from uncertain identification;
-- researches specifications and comparable prices on the current web;
+- researches specifications and Belarus-only comparable prices on the current web;
+- communicates with the seller and writes every listing in Russian;
 - asks a compact set of seller-only questions;
 - creates a canonical listing packet and marketplace-specific variants;
 - requires review of the exact copy, price, and fulfillment terms before publishing;
@@ -17,7 +18,7 @@ The initial version runs as the repo-scoped `$for-sale-lister` skill inside Code
 Attach one or more photos and ask:
 
 ```text
-Use $for-sale-lister to identify this item, research a fair price, and prepare listings for my chosen marketplaces.
+Используй $for-sale-lister, чтобы определить товар, изучить цены в Беларуси и подготовить объявления на русском языке для выбранных площадок.
 ```
 
 Codex discovers the skill from `.agents/skills/for-sale-lister`. Preparing a listing does not authorize an external post. Before publication, the skill shows the final material terms for every target platform and asks for explicit approval.

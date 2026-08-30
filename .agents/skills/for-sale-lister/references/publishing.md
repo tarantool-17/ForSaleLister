@@ -53,7 +53,7 @@ State the exact screen and required action. Resume only after the user completes
 
 For every target platform record:
 
-- status: `published`, `drafted`, `blocked`, `failed`, or `outcome_unknown`;
+- user-facing status in Russian: `опубликовано`, `черновик сохранён`, `заблокировано`, `ошибка`, or `результат неизвестен`;
 - platform and account label;
 - listing ID and URL, if available;
 - time of the action;

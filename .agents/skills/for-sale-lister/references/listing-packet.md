@@ -2,6 +2,8 @@
 
 Use one canonical packet per physical product or sellable lot. This is the source of truth for every marketplace variant.
 
+Write all human-readable packet content and public listing copy in Russian. Keep proper names, model identifiers, URLs, and exact platform-required values untranslated only when necessary for accuracy or form compatibility.
+
 ## Identity and evidence
 
 - Working item name
@@ -25,8 +27,8 @@ Use `untested` when operation is unknown. Avoid claims such as “works,” “a
 
 ## Commercial terms
 
-- Public price and currency
-- Pricing rationale and comparable range
+- Public price and currency; use BYN by default
+- Pricing rationale and comparable range based only on Belarusian-market evidence
 - Negotiable or fixed-price preference
 - Private minimum price, if supplied; never copy this into a public field
 - General item location
@@ -41,9 +43,10 @@ For each consequential source record:
 - access date;
 - exact claim supported;
 - source type: manufacturer, retailer, active marketplace listing, sold listing, or other;
-- whether the comparable is truly the same model, condition, completeness, region, and approximate sale date.
+- evidence that every price comparable is located in Belarus;
+- whether the comparable is truly the same model, condition, completeness, Belarusian region, and approximate sale date.
 
-Treat active asking prices and sold prices as different evidence. Do not present a search snippet, a single outlier, or a visually similar item as a reliable market value.
+Treat active asking prices and sold prices as different evidence. Exclude every foreign-market price, including Russian, EU, and global marketplace offers. Do not present a search snippet, a single outlier, a visually similar item, or a currency conversion of a foreign price as a reliable Belarusian market value. When Belarusian evidence is insufficient, record the price recommendation as unavailable instead of broadening the market.
 
 ## Platform draft
 
@@ -61,7 +64,7 @@ Create one variant per target marketplace containing:
 - ordered photos;
 - platform-specific warnings, fees, or unresolved required fields.
 
-Write for buyers: name the item early, make condition and included contents easy to scan, disclose defects plainly, and avoid keyword stuffing or unsupported superlatives. Platform variants may differ in length and formatting but must not contradict the canonical packet.
+Write for buyers in Russian: name the item early, make condition and included contents easy to scan, disclose defects plainly, and avoid keyword stuffing or unsupported superlatives. Platform variants may differ in length and formatting but must not contradict the canonical packet.
 
 ## Review summary
 
