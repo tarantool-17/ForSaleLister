@@ -5,8 +5,10 @@
 
 # Local listing runs may contain private photos and seller data.
 runs/
+.onliner-state/
 
 # Common generated files.
 node_modules/
+coverage/
 __pycache__/
 *.pyc

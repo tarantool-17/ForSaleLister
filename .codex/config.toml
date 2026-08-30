@@ -1,0 +1,11 @@
+[mcp_servers.onliner]
+command = "node"
+args = ["mcp/onliner/src/server.mjs"]
+cwd = "."
+startup_timeout_sec = 20
+tool_timeout_sec = 180
+default_tools_approval_mode = "writes"
+enabled = true
+
+[mcp_servers.onliner.tools.onliner_publish_listing]
+approval_mode = "prompt"
