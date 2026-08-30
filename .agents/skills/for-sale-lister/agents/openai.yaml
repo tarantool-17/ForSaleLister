@@ -1,0 +1,4 @@
+interface:
+  display_name: "For Sale Lister"
+  short_description: "Turn product photos into publishable listings"
+  default_prompt: "Use $for-sale-lister to identify this product from my photos, research it, and prepare listings for my chosen marketplaces."

@@ -1,0 +1,7 @@
+# Repository adaptation: wording updated for focused multi-commit publication.
+interface:
+  display_name: "Yeet"
+  short_description: "Create focused commits, push, and open PR"
+  icon_small: "./assets/yeet-small.svg"
+  icon_large: "./assets/yeet.png"
+  default_prompt: "Use $yeet to stage intended changes into focused commits, push the branch, and open a draft PR."
